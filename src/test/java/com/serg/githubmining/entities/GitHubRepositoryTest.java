@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RepositoryTest {
-    private static Repository repository;
+public class GitHubRepositoryTest {
+    private static GitHubRepository repository;
 
     @BeforeAll
     public static void setup() {
-        repository = new Repository("test_name", "test description", 10);
+        repository = new GitHubRepository("test_name", "test description", 10);
     }
 
     @Test

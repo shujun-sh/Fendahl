@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class GitHubApi {
     private static final HttpClient CLIENT = HttpClient.newHttpClient();
     private static final String GITHUB_API_URL = "https://api.github.com";
-    private static final String GITHUB_AUTH_TOKEN = System.getProperty("GITHUB_AUTH_TOKEN","");; // Your GitHub Auth Token here
+    private static final String GITHUB_AUTH_TOKEN = System.getenv("GITHUB_AUTH_TOKEN"); // Your GitHub Auth Token here
 
     /**
      * GET GitHub repository information through the GitHub API.

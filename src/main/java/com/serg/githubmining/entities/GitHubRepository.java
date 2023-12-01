@@ -3,7 +3,7 @@ package com.serg.githubmining.entities;
 /**
  * GitHub Repository class.
  */
-public class Repository {
+public class GitHubRepository {
     private String name;
     private String description;
     private int stargazersCount;
@@ -14,7 +14,7 @@ public class Repository {
      * @param description - The repository description.
      * @param stargazersCount - The repository stars count.
      */
-    public Repository(String name, String description, int stargazersCount) {
+    public GitHubRepository(String name, String description, int stargazersCount) {
         this.name = name;
         this.description = description;
         this.stargazersCount = stargazersCount;
