@@ -16,5 +16,6 @@ public class GitConnectController {
     @PostMapping("/connect")
     public String connect() {
         githubConnect.connect();
+        return "I got it";
     }
 }
